@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paladins App</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+    }
+
+    .logo {
+      width: 120px;
+      border-radius: 24px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+      font-size: 2.8rem;
+    }
+
+    p {
+      color: #cbd5e1;
+      margin-bottom: 50px;
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .coming-soon {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: center;
+    }
+
+    .store-item {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 20px;
+      width: 100%;
+      max-width: 320px;
+      backdrop-filter: blur(8px);
+    }
+
+    .store-item img {
+      width: 200px;
+      margin-bottom: 12px;
+    }
+
+    .store-item span {
+      display: block;
+      font-size: 1rem;
+      color: #94a3b8;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    @media (min-width: 700px) {
+      .coming-soon {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Replace with your own logo -->
+    <img
+      src="logo.png"
+      alt="Paladins Logo"
+      class="logo"
+    />
+
+    <h1>Paladins</h1>
+
+    <p>
+      Join a global community of prayer, encouragement, and faith.
+      The Paladins mobile app is launching soon.
+    </p>
+
+    <div class="coming-soon">
+
+      <!-- Apple -->
+      <div class="store-item">
+        <img
+          src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+          alt="Apple App Store"
+        />
+        <span>Coming Soon</span>
+      </div>
+
+      <!-- Google -->
+      <div class="store-item">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+          alt="Google Play Store"
+        />
+        <span>Coming Soon</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
