@@ -1,11 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paladins</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .logo {
+      width: 240px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #cbd5e1;
+      font-size: 1.1rem;
+    }
+
+    .policy-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(8px);
+    }
+
+    h2 {
+      color: white;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    p,
+    li {
+      color: #cbd5e1;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .policy-card {
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Paladins</h1>
-  <p>A place for the body of Christ to support each other in prayer.</p>
-  <a href="/privacy.html">Privacy Policy</a>
+
+  <div class="container">
+
+    <div class="header">
+      <img
+        src="Paladins Logo.png"
+        alt="Paladins Logo"
+        class="logo"
+      />
+
+      <h1>Paladins</h1>
+
+      <p class="subtitle">
+        A place for the body of Christ to unite in prayer/
+      </p>
+    </div>
+
+    <div class="policy-card">
+
+
+      <ul>
+        <p style="text-align: center;"><strong>Paladins is a mobile app that allows its users to post prayer requests and pray for eachother. Our hope is that using this app provides you with a deeper understanding of the power of prayer - for all involved! </strong></p>
+      </ul>
+
+    </div>
+
+    <div class="footer">
+      © 2026 Paladins • Operated by Forge Consulting
+    </div>
+
+  </div>
+
 </body>
 </html>
