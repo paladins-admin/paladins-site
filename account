@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paladins Account Management Request</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .logo {
+      width: 240px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #cbd5e1;
+      font-size: 1.1rem;
+    }
+
+    .policy-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(8px);
+    }
+
+    h2 {
+      color: white;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    p,
+    li {
+      color: #cbd5e1;
+      line-height: 1.7;
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .policy-card {
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <img
+        src="Paladins Logo.png"
+        alt="Paladins Logo"
+        class="logo"
+      />
+
+      <h1>Privacy Policy</h1>
+
+      <p class="subtitle">
+        Effective Date: 2026
+      </p>
+    </div>
+
+    <div class="policy-card">
+
+      <p>
+        Account Management
+      </p>
+
+      <h2>To managte your account, please email admin@paladins.life</h2>
+
+      <ul>
+        <li><strong>Account Removal and Management will be processed within 5 business days.</strong></li>
+      </ul>
+
+    </div>
+
+    <div class="footer">
+      © 2026 Paladins • Operated by Forge Consulting
+    </div>
+
+  </div>
+
+</body>
+</html>
