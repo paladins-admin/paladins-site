@@ -43,20 +43,22 @@
       align-items: center;
     }
 
-    /* 🔥 FIX: make links behave like blocks */
+    /* FIX: Proper centering + equal sizing */
     .coming-soon a {
-      display: block;
-      width: 100%;
-      max-width: 320px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 320px;
       text-decoration: none;
     }
 
     .store-item {
+      width: 100%;
+      max-width: 320px;
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.1);
       border-radius: 16px;
       padding: 20px;
-      width: 100%;
       backdrop-filter: blur(8px);
     }
 
@@ -73,16 +75,18 @@
       text-transform: uppercase;
     }
 
-    /* ✨ Optional polish */
+    /* Hover polish */
     .store-item:hover {
       transform: translateY(-2px);
       transition: 0.2s ease;
     }
 
+    /* Desktop layout */
     @media (min-width: 700px) {
       .coming-soon {
         flex-direction: row;
         justify-content: center;
+        gap: 40px; /* prevents overlap + looks clean */
       }
     }
   </style>
@@ -93,7 +97,6 @@
 
   <div class="container">
 
-```
 <img
   src="Paladins Logo.png"
   alt="Paladins Logo"
@@ -120,7 +123,7 @@
     </div>
   </a>
 
-  <!-- Google (disabled for now) -->
+  <!-- Google (disabled) -->
   <a href="#" style="pointer-events: none; opacity: 0.6;">
     <div class="store-item">
       <img
@@ -132,9 +135,10 @@
   </a>
 
 </div>
-```
+
 
   </div>
 
 </body>
 </html>
+
