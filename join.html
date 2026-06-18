@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -23,12 +24,6 @@
       max-width: 600px;
     }
 
-    .logo {
-      width: 120px;
-      border-radius: 24px;
-      margin-bottom: 20px;
-    }
-
     h1 {
       margin-bottom: 10px;
       font-size: 2.8rem;
@@ -48,13 +43,20 @@
       align-items: center;
     }
 
+    /* 🔥 FIX: make links behave like blocks */
+    .coming-soon a {
+      display: block;
+      width: 100%;
+      max-width: 320px;
+      text-decoration: none;
+    }
+
     .store-item {
       background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.1);
       border-radius: 16px;
       padding: 20px;
       width: 100%;
-      max-width: 320px;
       backdrop-filter: blur(8px);
     }
 
@@ -71,6 +73,12 @@
       text-transform: uppercase;
     }
 
+    /* ✨ Optional polish */
+    .store-item:hover {
+      transform: translateY(-2px);
+      transition: 0.2s ease;
+    }
+
     @media (min-width: 700px) {
       .coming-soon {
         flex-direction: row;
@@ -78,46 +86,53 @@
       }
     }
   </style>
+
 </head>
+
 <body>
 
   <div class="container">
 
-    <img
-      src="Paladins Logo.png"
-      alt="Paladins Logo"
-      style="width: 240px;"
-    />
+```
+<img
+  src="Paladins Logo.png"
+  alt="Paladins Logo"
+  style="width: 240px;"
+/>
 
-    <h1>Paladins</h1>
+<h1>Paladins</h1>
 
-    <p>
-      Join a global community of prayer, encouragement, and faith.
-      The Paladins mobile app is launching soon.
-    </p>
+<p>
+  Join a global community of prayer, encouragement, and faith.
+  The Paladins mobile app is launching soon.
+</p>
 
-    <div class="coming-soon">
-      <!-- Apple -->
-<a href="https://apps.apple.com/au/app/paladins/id6766744891" target="_blank" style="text-decoration: none;">
-  <div class="store-item">
-    <img
-      src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-      alt="Apple App Store"
-    />
-    <span>Download on iOS</span>
-  </div>
-</a>
+<div class="coming-soon">
 
-      <!-- Google -->
-      <div class="store-item">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-          alt="Google Play Store"
-        />
-        <span>Coming Soon</span>
-      </div>
-
+  <!-- Apple -->
+  <a href="https://apps.apple.com/au/app/paladins/id6766744891" target="_blank">
+    <div class="store-item">
+      <img
+        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+        alt="Apple App Store"
+      />
+      <span>Download on iOS</span>
     </div>
+  </a>
+
+  <!-- Google (disabled for now) -->
+  <a href="#" style="pointer-events: none; opacity: 0.6;">
+    <div class="store-item">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+        alt="Google Play Store"
+      />
+      <span>Coming Soon</span>
+    </div>
+  </a>
+
+</div>
+```
 
   </div>
 
