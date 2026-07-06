@@ -1,143 +1,30 @@
 <!DOCTYPE html>
-
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paladins App</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 600px;
-    }
-
-    h1 {
-      margin-bottom: 10px;
-      font-size: 2.8rem;
-    }
-
-    p {
-      color: #cbd5e1;
-      margin-bottom: 50px;
-      line-height: 1.6;
-      font-size: 1.1rem;
-    }
-
-    .coming-soon {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      align-items: center;
-    }
-
-    /* FIX: Proper centering + equal sizing */
-    .coming-soon a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 320px;
-      text-decoration: none;
-    }
-
-    .store-item {
-      width: 100%;
-      max-width: 320px;
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 16px;
-      padding: 20px;
-      backdrop-filter: blur(8px);
-    }
-
-    .store-item img {
-      width: 200px;
-      margin-bottom: 12px;
-    }
-
-    .store-item span {
-      display: block;
-      font-size: 1rem;
-      color: #94a3b8;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    /* Hover polish */
-    .store-item:hover {
-      transform: translateY(-2px);
-      transition: 0.2s ease;
-    }
-
-    /* Desktop layout */
-    @media (min-width: 700px) {
-      .coming-soon {
-        flex-direction: row;
-        justify-content: center;
-        gap: 40px; /* prevents overlap + looks clean */
-      }
-    }
-  </style>
-
-</head>
-
-<body>
-
-  <div class="container">
-
-<img
-  src="Paladins Logo.png"
-  alt="Paladins Logo"
-  style="width: 240px;"
-/>
-
-<h1>Paladins</h1>
-
-<p>
-  Join a global community of prayer, encouragement, and faith.
-</p>
-
-<div class="coming-soon">
-
-  <!-- Apple -->
-  <a href="https://apps.apple.com/au/app/paladins/id6766744891" target="_blank">
-    <div class="store-item">
-      <img
-        src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-        alt="Apple App Store"
-      />
-      <span>Download on iOS</span>
-    </div>
-  </a>
-
-  <!-- Google (disabled) -->
-  <a href="https://play.google.com/store/apps/details?id=com.paladins.life" target="_blank">
-    <div class="store-item">
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-        alt="Google Play Store"
-      />
-      <span>Download on Android</span>
-    </div>
-  </a>
-
-</div>
-
-
-  </div>
-
-</body>
-</html>
-
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Join Paladins</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f172a;--gold:#d4af37;--text:#f8fafc;--muted:#cbd5e1;--glass:rgba(255,255,255,.05)}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:Montserrat,sans-serif;color:var(--text);background:radial-gradient(circle at top,rgba(212,175,55,.15),transparent 35%),linear-gradient(#08111d,#0f172a)}
+.container{width:min(92%,1100px);margin:auto}.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 20px}.logo{width:220px}.hero h1{font:700 4rem Cinzel,serif;color:var(--gold);margin:20px 0 10px}.tag{font:italic 1.4rem Cinzel,serif;color:var(--gold)}.lead{max-width:700px;margin:25px auto;color:var(--muted);line-height:1.8;font-size:1.15rem}.cta{display:inline-block;margin-top:20px;padding:18px 42px;border-radius:50px;background:linear-gradient(135deg,#d4af37,#f0d56b);color:#08111d;text-decoration:none;font-weight:700}.cta:hover{filter:brightness(1.05)}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;padding:70px 0}.card{background:var(--glass);padding:30px;border-radius:18px;border:1px solid rgba(212,175,55,.15)}.card h3{font:600 1.5rem Cinzel,serif;color:var(--gold);margin:12px 0}.card p{color:var(--muted);line-height:1.7}
+.section-title{text-align:center;font:600 2.5rem Cinzel,serif;color:var(--gold);margin-bottom:40px}.how,.download{padding:70px 0}.steps{display:flex;flex-wrap:wrap;justify-content:center;gap:20px}.step{width:220px;background:var(--glass);padding:25px;border-radius:16px;border:1px solid rgba(212,175,55,.15);text-align:center}.num{width:46px;height:46px;border-radius:50%;margin:0 auto 15px;background:var(--gold);color:#08111d;display:flex;align-items:center;justify-content:center;font-weight:bold}.stores{display:flex;flex-wrap:wrap;justify-content:center;gap:25px;margin-top:30px}.store{background:var(--glass);padding:20px;border-radius:18px;border:1px solid rgba(212,175,55,.15)}.store img{width:200px}footer{text-align:center;padding:50px;color:#94a3b8;border-top:1px solid rgba(212,175,55,.1)}footer .brand{font:600 1.2rem Cinzel,serif;color:var(--gold)}
+@media(max-width:768px){.hero h1{font-size:2.8rem}}
+</style></head><body>
+<section class='hero'><div class='container'><img class='logo' src='Paladins Logo.png' alt='Paladins Logo'><h1>PALADINS</h1><div class='tag'>pray often.</div><p class='lead'>An anonymous prayer community helping believers carry one another's burdens through prayer, encouragement and faith.</p><a class='cta' href='#download'>Join the Community →</a></div></section>
+<div class='container'>
+<section class='features'>
+<div class='card'><div style='font-size:2rem'>🙏</div><h3>Anonymous Prayer</h3><p>Share prayer requests safely without revealing your identity.</p></div>
+<div class='card'><div style='font-size:2rem'>❤️</div><h3>Pray for Others</h3><p>Stand alongside believers around the world through faithful prayer.</p></div>
+<div class='card'><div style='font-size:2rem'>📖</div><h3>Biblically Grounded</h3><p>Built to encourage a lifestyle of prayer rooted in Scripture.</p></div>
+</section>
+<section class='how'><h2 class='section-title'>How It Works</h2><div class='steps'>
+<div class='step'><div class='num'>1</div><strong>Share</strong><p>Post a prayer request anonymously.</p></div>
+<div class='step'><div class='num'>2</div><strong>Pray</strong><p>Believers pray with and for one another.</p></div>
+<div class='step'><div class='num'>3</div><strong>Grow</strong><p>Be encouraged through a community of prayer.</p></div>
+</div></section>
+<section id='download' class='download'><h2 class='section-title'>Download Paladins</h2><p class='lead'>Available now on iPhone and Android.</p><div class='stores'>
+<a class='store' href='https://apps.apple.com/au/app/paladins/id6766744891' target='_blank'><img src='https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg'></a>
+<a class='store' href='https://play.google.com/store/apps/details?id=com.paladins.life' target='_blank'><img src='https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg'></a>
+</div></section></div>
+<footer><div class='brand'>PALADINS</div><div>pray often.</div><br>© 2026 Paladins • Operated by Forge Consulting</footer>
+</body></html>
